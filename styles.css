@@ -1,0 +1,82 @@
+html {
+  font-size: 10px;
+  font-family: "Permanent Marker", cursive;
+  letter-spacing: 4px;
+}
+
+body {
+  background-color: #040101;
+  min-height: 100vh;
+  color: whitesmoke;
+  font-size: 1.4rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.image_sound {
+  width: 300px;
+  border-radius: 50%;
+  height: 300px;
+  border: 1px solid white;
+  margin: auto;
+}
+
+.player {
+  background-color: #290a0a;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+img {
+  width: 50%;
+}
+
+#controls {
+  border: 1px white solid;
+  border-radius: 1rem;
+  padding: 1.6rem;
+  width: 310px;
+  margin: auto;
+}
+
+.controls_wrapper > span {
+  cursor: pointer;
+}
+
+#currentSong {
+  overflow: hidden;
+}
+
+#songList {
+  overflow: hidden;
+  text-align: left;
+  width: max-content;
+  margin: auto;
+}
+
+li {
+  cursor: pointer;
+  padding: 1.5rem;
+}
+
+li:hover {
+  background: #f3644b;
+}
+
+progress {
+  width: 300px;
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: whitesmoke;
+}
+
+@media (min-width: 800px) {
+  body {
+    max-width: 60vw;
+    font-size: 1.8rem;
+  }
+}
