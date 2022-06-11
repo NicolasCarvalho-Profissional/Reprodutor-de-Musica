@@ -23,7 +23,7 @@
       <div class='image_sound'></div>
 
       
-      <audio id="player" ontimeupdate="updateProgress()">
+      <audio id="player">
         <source id="source" />
         Audio not supported
       </audio>
@@ -36,8 +36,8 @@
       <div id="controls">
         
         <div class="controls_wrapper">
-          <span onclick="playAudio()">&#9658;</span>
-          <span onclick="pauseAudio()">&#10074;&#10074;</span>
+          <span id='play_button'> &#9658; </span>
+          <span id='pause_button'> &#10074;&#10074; </span>
         </div>
         
         <div class="volume">
