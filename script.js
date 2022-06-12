@@ -1,11 +1,11 @@
 //Lista de músicas
 const songs = [
-  "bensound-clapandyell.mp3",
-  "bensound-dance.mp3",
-  "bensound-funkyelement.mp3",
-  "bensound-happiness.mp3",
-  "bensound-happyrock.mp3",
-  "bensound-thelounge.mp3",
+  "Love Me Do - The Beatles.mp3",
+  "NIB - Black Sabbath.mp3",
+  "Digo Ou Não Digo - João Gomes.mp3",
+  "Sorrisos - L7NNON.mp3",
+  "Soco Racional - Dead Fish.mp3",
+  "Pandemonium - Matanza.mp3",
 ];
 
 const player = document.getElementById("player");
@@ -19,7 +19,7 @@ const createSongList = () => {
   const list = document.createElement("ol");
   for (let i = 0; i < songs.length; i++) {
     const item = document.createElement("li");
-    item.appendChild(document.createTextNode(songs[i]));
+    item.appendChild(document.createTextNode(songs[i].slice(0,-4)));
     list.appendChild(item);
   }
   return list;
@@ -31,7 +31,7 @@ const createSongList = () => {
 function setSong(e) {
 
   const source = document.getElementById("source");
-  source.src = "songs/" + e.target.innerText;
+  source.src = "songs/" + e.target.innerText +".mp3";
   
   document.getElementById("currentSong").innerText = e.target.innerText;
 
@@ -85,12 +85,14 @@ slider.addEventListener('input', (e)=>{
 player.addEventListener('timeupdate', ()=>{
   
   if (player.currentTime > 0) {
-    const progressBar = document.getElementById("progress");
-    progressBar.value = (player.currentTime / player.duration) * 100;
+    progress_bar.value = (player.currentTime / player.duration) * 100;
   } 
+
+  let image_sound = document.getElementById('image_sound');
+
+  image_sound.style.transform += 'rotate(1deg)';
   
 }) 
-
 
 
 //Avançando ou retrocedendo na música ao clique na barra de progresso
@@ -99,7 +101,7 @@ progress_bar.addEventListener('click', (e) => {
   let totalX = progress_bar.clientWidth;
   let mouseX = e.offsetX;
   let song_duration = player.duration;
-  let new_time = (mouseX * song_duration) / totalX
+  let new_time = parseInt((mouseX * song_duration) / totalX)
 
   player.currentTime =  new_time;
   progress_bar.value = (new_time * 100) / song_duration;  
