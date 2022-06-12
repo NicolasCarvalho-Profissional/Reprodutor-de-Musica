@@ -7,7 +7,6 @@ html {
 body {
   min-height: 100vh;
   background:  #002423;
-  background-image: url('./images/fundo.png');
   color: whitesmoke;
   font-size: 1.4rem;
   margin: 2rem auto;

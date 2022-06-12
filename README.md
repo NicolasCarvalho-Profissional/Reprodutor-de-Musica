@@ -1,5 +1,9 @@
-![Fun Javascript Projects Logo](https://res.cloudinary.com/djn1ticju/image/upload/v1594740008/Fun%20Javascript%20Projects%20Logo.png)
+<h1>Reprodutor de músicas</h1>
 
-# Sign up for free at [Fun Javascript Projects.com!](https://fun-javascript-projects.com)
+<p>Projeto final da disciplina de Prática Profissional II baseado no <a href='https://github.com/chrisdixon161/fun-javascript-projects.com'> fun-javascript-projects.com </a> </p>
 
-## This repo contains completed code samples and assets for [Fun Javascript Projects.com!](https://fun-javascript-projects.com).
+<h2>Fontes:</h2>
+
+<ul>
+  <li>  <a href='https://www.pexels.com/pt-br/foto/vinil-preto-em-uma-plataforma-giratoria-775414/'> Imagem do player </a>  </li>
+</ul>
